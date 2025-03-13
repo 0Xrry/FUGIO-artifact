@@ -49,4 +49,4 @@ ADD benchmarks/ /FUGIO/benchmarks
 WORKDIR /FUGIO
 
 # For php7.2
-RUN rm install_54.sh install_56.sh run_FUGIO_54.sh run_FUGIO_54_all.sh run_FUGIO_56.sh run_FUGIO_cubecart.sh run_FUGIO_cubecart_all.sh
+RUN rm install_84.sh install_54.sh install_56.sh run_FUGIO_54.sh run_FUGIO_54_all.sh run_FUGIO_56.sh run_FUGIO_cubecart.sh run_FUGIO_cubecart_all.sh
