@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t fugio_php8.2:v0.1 .
+docker build -t fugio_php8.4:v0.1 .

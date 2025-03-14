@@ -44,7 +44,7 @@ RUN echo "[program:mysql]" > /etc/supervisor/conf.d/mysql.conf && \
     echo "/usr/bin/supervisord -n" >> /start.sh
 RUN chmod 755 /*.sh
 
-RUN git clone --recurse-submodules https://github.com/WSP-LAB/FUGIO.git /FUGIO
+RUN export https_proxy=http://172.17.0.1:7890 && export http_proxy=http://172.17.0.1:7890 && git clone --recurse-submodules https://github.com/0Xrry/FUGIO.git /FUGIO
 ADD benchmarks/ /FUGIO/benchmarks
 WORKDIR /FUGIO
 
